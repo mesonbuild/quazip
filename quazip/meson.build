@@ -36,7 +36,7 @@ quazip_lib = library(
   quazip_pp,
   dependencies: [qt5_dep, zlib_dep],
   cpp_args: quazip_args,
-  override_options: ['cpp_std=c++11']
+  override_options: ['cpp_std=c++11', 'werror=false']
 )
 
 quazip_incdir = include_directories('.')
